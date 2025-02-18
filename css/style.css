@@ -1,0 +1,75 @@
+/* ---- Start General ---- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+	--dark: #333333;
+	--dark-light: #666666;
+	--light: #e8e8e8;
+	--white: #ffffff;
+	--primary: #0077FF;
+	--primary-dark: #00489A;
+	--primary-light: #79B2F2;
+}
+* {
+	font-family: "Work Sans", serif;
+	color: var(--dark);
+	font-size: 18px;
+}
+/* Start Button */
+button {
+	background-color: var(--primary);
+	color: var(--white);
+	border: none;
+	border-radius: 50px;
+	padding: 13.5px 31.5px;
+	cursor: pointer;
+}
+button:hover {
+	opacity: 0.5;
+}
+button.secondary {
+	background-color: var(--white);
+	color: var(--primary);
+	border: solid 2px var(--primary);
+}
+/* End Button */
+h1 {
+	font-size: 70px;
+}
+h2 {
+	font-size: 50px;
+}
+h3 {
+	font-size: 25px;
+}
+h4 {
+	font-size: 20px;
+}
+/* ---- End General ---- */
+
+/* ---- Start Navbar ---- */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+}
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu-voice {
+	display: flex;
+	margin-right: 50px;
+}
+.menu-voice li {
+	margin-right: 15px;
+	list-style: none;
+	font-weight: 600;
+}
+.menu-voice li a {
+	text-decoration: none;
+}
+.menu-voice li a:hover {
+	color: var(--primary);
+}
+/* ---- End Navbar ---- */
