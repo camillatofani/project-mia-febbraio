@@ -1,5 +1,6 @@
 # Progetto Settimana introduttiva
-Corso serale MiaTech
+Obiettivo della settimana: rifare in html, css e JavaScript [questo design](https://github.com/camillatofani/project-mia-febbraio/blob/main/design/Portfolio-Desktop.png).
+Qui la versione [mobile](https://github.com/camillatofani/project-mia-febbraio/blob/main/design/Portfolio-Mobile.png).
 
 ## Per clonare il repository:
 ```bash
