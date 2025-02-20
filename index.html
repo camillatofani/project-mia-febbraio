@@ -24,7 +24,9 @@
 			</ul>
 			<!-- Pulsante di menu -->
 			<button>Let’s chat</button>
+			<button class="close-menu">Chiudi</button>
 		</div>
+		<img id="toggle" src="img/toggle.svg">
 	</nav>
 	<!-- End Navbar -->
 
@@ -76,13 +78,13 @@
 				<p>Hello there! I'm <b>Robert Junior</b>. I specialize in web design and development, and I'm deeply passionate and committed to my craft. With <b>20 years</b> of experience as a professional graphic designer</p>
 				<!-- Buttons -->
 				<div>
-					<button>Main Skills</button>
-					<button class="secondary">Awards</button>
-					<button class="secondary">Education</button>
+					<button id="aboutBtnSkills">Main Skills</button>
+					<button id="aboutBtnAwards" class="secondary">Awards</button>
+					<button id="aboutBtnEducation" class="secondary">Education</button>
 				</div>
 				<!-- Bars -->
 				<!-- Start Single Bar -->
-				<div class="single-bar">
+				<div class="single-bar" id="firstAboutBar">
 					<div class="bars-title">User Experience Design - UI/UX</div>
 					<div class="bar">
 						<div class="bar-progress" style="width: 90%;"></div>
@@ -90,7 +92,7 @@
 				</div>
 				<!-- End Single Bar -->
 				<!-- Start Single Bar -->
-				<div class="single-bar">
+				<div class="single-bar" id="secondAboutBar">
 					<div class="bars-title">Web & User Interface Design - Development</div>
 					<div class="bar">
 						<div class="bar-progress" style="width: 75%;"></div>
@@ -98,7 +100,7 @@
 				</div>
 				<!-- End Single Bar -->
 				<!-- Start Single Bar -->
-				<div class="single-bar">
+				<div class="single-bar" id="thirdAboutBar">
 					<div class="bars-title">Interaction Design - Animation</div>
 					<div class="bar">
 						<div class="bar-progress" style="width: 82%;"></div>
@@ -119,5 +121,7 @@
 	<!-- End Main -->
 
 	<footer></footer>
+
+	<script src="js/script.js"></script>
 </body>
 </html>
