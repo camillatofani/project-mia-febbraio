@@ -22,6 +22,7 @@ button {
 	border-radius: 50px;
 	padding: 13.5px 31.5px;
 	cursor: pointer;
+	border: solid 2px var(--primary);
 }
 button:hover {
 	opacity: 0.5;
@@ -80,6 +81,7 @@ nav {
 	display: none;
 	font-size: 14px;
 	background-color: red;
+	border: solid 2px red;
 	margin-top: 50px;
 }
 #toggle {
@@ -131,6 +133,7 @@ nav {
 	.hero {
 		flex-direction: column-reverse;
 		text-align: center;
+		padding: 30px 0px 60px 0px;
 	}
 }
 /* ---- End Hero ---- */
@@ -142,8 +145,8 @@ nav {
 	display: flex;
 }
 .tools img {
-	/* Se mettiamo 200px funziona */
 	width: 100%;
+	margin: 10px 0px;
 }
 @media (max-width: 992px) {
 	.tools {
@@ -162,6 +165,9 @@ nav {
 	display: flex;
 	align-items: center;
 }
+.about > div {
+	padding-left: 30px;
+}
 .about .title,
 .about .title span {
 	font-weight: 700;
@@ -173,6 +179,7 @@ nav {
 .bars-title {
 	font-size: 20px;
 	font-weight: 600;
+	margin-top: 20px;
 }
 .single-bar {
 	margin: 10px 0px;
@@ -182,6 +189,7 @@ nav {
 	width: 100%;
 	height: 17px;
 	border-radius: 10px;
+	margin: 5px 0px 20px 0px;
 }
 .bar-progress {
 	background-color: var(--primary);
@@ -192,6 +200,183 @@ nav {
 	.about {
 		flex-direction: column;
 		text-align: center;
+		padding: 60px 0px;
+	}
+	.about > div {
+		padding-right: 30px;
 	}
 }
 /* ---- End About ---- */
+
+/* ---- Start Services ---- */
+.services {
+	padding: 60px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.services .title,
+.services .title span {
+	font-weight: 700;
+}
+.services .title span {
+	font-size: 50px;
+	color: var(--primary);
+}
+.services-block {
+	display: flex;
+}
+.services-single-block {
+	border-radius: 10px;
+	padding: 20px;
+	text-align: left;
+	margin: 0px 10px;
+}
+.services-single-block.blue {
+	background-color: var(--primary);
+}
+.services-single-block.blue h3,
+.services-single-block.blue p,
+.services-single-block.blue a {
+	color: var(--white);
+	text-decoration: none;
+}
+.services-single-block.white {
+	border: solid 1px var(--dark-light);
+}
+.services-single-block.white a {
+	color: var(--primary);
+	text-decoration: none;
+}
+.services-single-block a:hover {
+	opacity: 0.5;
+}
+@media (max-width: 992px) {
+	.services-block {
+		flex-direction: column;
+	}
+	.services-single-block {
+		margin: 10px 0px;
+	}
+}
+/* ---- End Services ---- */
+
+/* ---- Start Services ---- */
+.milestones {
+	background-color: var(--primary);
+	color: var(--white);
+	padding: 60px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.milestones h4,
+.milestones p {
+	color: var(--white);
+}
+.milestones .title {
+	font-weight: 700;
+	color: var(--white);
+}
+.milestones-block {
+	display: flex;
+}
+.milestones-single-block {
+	background-color: var(--white);
+	border-radius: 10px;
+	padding: 20px;
+	margin: 0px 10px;
+}
+.milestones-single-block h2 {
+	margin: 0px;
+}
+.milestones-single-block h4 {
+	margin: 0px;
+	color: var(--dark);
+	text-transform: none;
+}
+@media (max-width: 992px) {
+	.milestones-block {
+		flex-direction: column;
+	}
+	.milestones-single-block {
+		margin: 10px 0px;
+	}
+}
+/* ---- End Services ---- */
+
+/* ---- Start Projects ---- */
+.projects {
+	padding: 60px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.projects .title {
+	font-weight: 700;
+}
+.projects-img {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+.projects-img img {
+	width: 100%;
+}
+@media (max-width: 992px) {
+	.projects-img {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 768px) {
+	.projects-img {
+		grid-template-columns: 1fr;
+	}
+}
+/* ---- End Projects ---- */
+
+/* ---- Start Contact ---- */
+.contact {
+	background-color: var(--primary);
+	color: var(--white);
+	padding: 60px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.contact h4 {
+	color: var(--white);
+}
+.contact .title {
+	font-weight: 700;
+	color: var(--white);
+}
+.contact-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+.contact-box {
+	background-color: var(--white);
+	color: var(--dark);
+	padding: 20px;
+	border-radius: 10px;
+}
+@media (max-width: 992px) {
+	.contact-grid {
+		grid-template-columns: 1fr;
+	}
+}
+input,
+textarea {
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	margin: 10px 0px;
+	width: 80%;
+}
+/* ---- End Contact ---- */

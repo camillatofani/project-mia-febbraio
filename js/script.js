@@ -6,8 +6,6 @@ const nav = document.querySelector('nav');
 const body = document.querySelector('body');
 
 
-console.log(closeMenu);
-
 toggle.addEventListener("click", function () {
 	menu.style.display = "flex";
 	nav.style.padding = "0px";
